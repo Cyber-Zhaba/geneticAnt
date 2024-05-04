@@ -246,9 +246,10 @@ def evolution():
         plt.savefig("plot.png")
 
 
-clear_models()
-evolution()
-
-# a: Ant = pickle.load(open("models/model_1", "rb"))
-# f = generate_field()
-# life(a, f, verbose=True)
+if __name__ == "__main__":
+    ...
+    # clear_models()
+    # evolution()
+    a: Ant = pickle.load(open("models/final_model", "rb"))
+    f = generate_field()
+    life(a, f, verbose=True)
